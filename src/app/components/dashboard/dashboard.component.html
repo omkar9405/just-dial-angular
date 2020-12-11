@@ -1,0 +1,14 @@
+<p>dashboard works!</p>
+<!-- This nav gives you links to click, which tells the router which route to use (defined in the routes constant in  AppRoutingModule) -->
+<nav>
+    <ul>
+      <li><a >First Component</a></li>
+      <button (click)="clicked()">Admin</button>
+  
+      <li><a (click)="clicked1()">Employee</a></li>
+      <router-outlet></router-outlet>
+   
+    </ul>
+  </nav>
+  <!-- The routed views render in the <router-outlet>-->
+    

@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "just-dial-angular"
+    }
+  },
+  "defaultProject": "just-dial-angular",
+  "cli": {
+    "analytics": false
+  }
 }
