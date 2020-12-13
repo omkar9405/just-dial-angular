@@ -1,0 +1,9 @@
+
+@media screen and (min-width: 411px){
+  
+
+    .card-body{
+        margin-top: 20px;
+        width: 100%;
+    }
+}

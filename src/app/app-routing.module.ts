@@ -4,6 +4,8 @@ import { AppComponent } from './app.component';
 import { AdminComponent } from './components/dashboard/admin/admin.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { EmployeeComponent } from './components/dashboard/employee/employee.component';
+import { NavComponent } from './components/dashboard/nav/nav.component';
+import { SidebarComponent } from './components/dashboard/sidebar/sidebar.component';
 import { HomeComponent } from './components/home/home.component';
 
 
@@ -23,6 +25,8 @@ const routes: Routes = [
         }
     ]},
   { path: 'app-home', component: HomeComponent },
+  { path: 'app-nav', component: NavComponent },
+ { path: 'app-sidebar', component: SidebarComponent },
 ];
 
 @NgModule({

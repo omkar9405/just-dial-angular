@@ -14,6 +14,8 @@ import { LoginSectionComponent } from './components/login-section/login-section.
 import { LoginComponent } from './components/login-section/login/login.component';
 import { SignupComponent } from './components/login-section/signup/signup.component';
 import { LocationStrategy, PathLocationStrategy } from '@angular/common';
+import { SidebarComponent } from './components/dashboard/sidebar/sidebar.component';
+import { NavComponent } from './components/dashboard/nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { LocationStrategy, PathLocationStrategy } from '@angular/common';
     LocationsComponent,
     LoginSectionComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    SidebarComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,

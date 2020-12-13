@@ -1,48 +1,19 @@
 <div class="wrapper"> 
-  <div class="navbar">
-   <!-- <img src="" alt="LOGO"> -->
-   <h1 class="logo">Just Dial</h1>
-   <ul>
-    <li><a href="" style="text-decoration: none;"><h2>Omkar Powar</h2></a></li> 
-    <li><div class="dropdown">
-      <img class="dropbtn" src="../../../assets/images/NQTphoto.jpg" height="50px" width="50px"/>
-      <div class="dropdown-content">
-        <a (click)="clicked1()">Profile</a>
-        <a (click)="clicked()">Messages</a>
-        <a routerLink="/app-home">Logout</a>
-      </div>
-    </div>
-    </li>
-   </ul>
+  <div class="col-md-12">
+    <app-nav></app-nav>
   </div>
   <div class="container">
     <div class="row">
       <div class="side">
-        <ul>
-          <li><a class="nav-link" (click)="clicked()">Admin</a></li>
-          <li><a class="nav-link" (click)="clicked1()">Employee</a></li>
-          <li><a class="nav-link" (click)="clicked()">Customer</a></li>
-          <li><a class="nav-link" (click)="clicked1()">Progress</a></li>
-        </ul>
+        <app-sidebar></app-sidebar>
       </div>
-      <div class="content">
+      <div class="content col-md-10 col-sm-7">
         <router-outlet></router-outlet>
       </div>
     </div>
     
   </div>
-
 </div>
 
-<!-- <nav>
-    <ul>
-      <li><a >First Component</a></li>
-      <button (click)="clicked()">Admin</button>
-  
-      <li><a (click)="clicked1()">Employee</a></li>
-      <router-outlet></router-outlet>
-   
-    </ul>
-  </nav> -->
- 
+
     
