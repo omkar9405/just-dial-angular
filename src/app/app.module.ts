@@ -19,6 +19,7 @@ import { NavComponent } from './components/dashboard/nav/nav.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DashboardRoutingModule } from './components/dashboard/dashboard-routing.module';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { DashboardRoutingModule } from './components/dashboard/dashboard-routing
     LoginComponent,
     SignupComponent,
     SidebarComponent,
-    NavComponent
+    NavComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

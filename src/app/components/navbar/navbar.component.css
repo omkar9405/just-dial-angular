@@ -1,0 +1,78 @@
+.active{
+    color: white;
+}
+@media screen and (min-width: 822px)
+{
+.navbar-nav{
+    position: absolute; 
+    right: 5%;
+  }
+
+  .nav-item #loginModal1{
+    padding: 10px;
+    margin-left: 10px;
+    border: 2px solid green;
+}
+.nav-item #signModal1{
+    padding: 10px;
+    border: 2px solid green;
+}
+.navbar-text1 a{
+    padding: 10px;
+    border: 2px solid green;
+} 
+li .nav-link{
+    color: green;
+}
+}
+@media screen and (min-width: 411px){
+
+  body {
+    padding: 0px 0px 0px 0px;
+    z-index: 0;
+  }
+  .collapse{
+      height: 100%;
+  }
+  .navbar-dark {
+    background-color: violet;
+    border-bottom: 5px solid rgb(42, 201, 10);
+  }
+.navbar-nav{
+    text-align: center;
+    justify-content: center;
+ 
+}
+.navbar-text a{
+    position: absolute;
+    bottom: 4%;
+    left: 30%;
+    color: green;
+}
+.navbar-text1 a{
+    position: absolute;
+    left: 50%;
+    color: green;
+}
+  .tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+  }
+ 
+  .modal .modal-header{
+    background: #9575CD;
+  }
+  .modal-body{
+    background: #9575CD;
+  }
+  .modal-body .intern{
+    top: 0;
+    left: 0;
+    background-color: #D1C4E9;
+  }
+  .modal-body .card{
+    background-color: #D1C4E9;
+  }
+}

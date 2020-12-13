@@ -1,0 +1,54 @@
+<nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+    <div class="container">
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#Navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand mr-auto" href="#"><img src="" height="30" width="41"></a>
+        <div class="collapse navbar-collapse" id="Navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" routerLink="/app-home"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                <li class="nav-item"><a  type="button" id="loginModal1"><span class="fa fa-sign-in">Login</span></a></li>
+                <li class="nav-item"><a  type="button" id="signModal1"><span class="fa fa-sign-in">SignUp</span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div id="loginModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form class="intern">
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputEmail">Email</label>
+                                <input type="email" class="form-control form-control-sm mr-1" id="exmapleInputEmail" placeholder="Enter Email">
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword" placeholder="Enter Password">
+                            </div>
+
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label">Remember</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" routerLink="/app-dashboard" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal"> cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign In</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </div>
+</div>
