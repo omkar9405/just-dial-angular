@@ -16,12 +16,15 @@ import { SignupComponent } from './components/login-section/signup/signup.compon
 import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { SidebarComponent } from './components/dashboard/sidebar/sidebar.component';
 import { NavComponent } from './components/dashboard/nav/nav.component';
+import { RouterModule } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DashboardRoutingModule } from './components/dashboard/dashboard-routing.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    AdminComponent,
     CustomerComponent,
     EmployeeComponent,
     HomeComponent,
@@ -35,7 +38,13 @@ import { NavComponent } from './components/dashboard/nav/nav.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule,
+    FormsModule,
+    ReactiveFormsModule,
+
+  
+
   ],
   providers: [
     {provide:LocationStrategy,useClass:PathLocationStrategy}

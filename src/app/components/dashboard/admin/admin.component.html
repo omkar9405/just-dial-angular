@@ -1,6 +1,12 @@
 <div class="row" >
-<div class="card height-auto col-md-5 col-sm-12  mr-auto">
-    <div class="card-body">
+  <div class="card height-auto col-md-5 col-sm-12  mr-auto">
+  <div>
+    <button style="float: right; margin-top: 10px;" (click)="add()" type="button"
+  class="" >
+  + Add 
+</button>
+  </div>  
+  <div class="card-body">
       <div class="table-responsive">
         <table id="example" class="table display data-table text-nowrap cell-border">
           <thead>
@@ -31,36 +37,66 @@
       </div>
     </div>
   </div>
+  &nbsp;
   <div class="card height-auto col-md-6 col-sm-12 ">
     <div class="card-body">
-      <div class="table-responsive">
-        <table id="example" class="table display data-table text-nowrap cell-border">
-          <thead>
-            <tr>
-              <th>Admin Name</th>
-              <th>Type</th>
-              <th>Address</th>
-              <th>Intek</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr >
-              <td>hostelName </td>
-              <td>hostel.type </td>
-              <td>hostel.address </td>
-              <td>hostel.intake</td>
-              <td>
-                <a  data-toggle="modal" data-target="#myModal">
-                    <i class="fas fa-pen-alt text-orange-peel"></i>&nbsp;</a>
-                <a><i class="fas fa-times text-orange-red"></i>&nbsp;</a>
-              </td>
-            </tr>
-  
-          </tbody>
-        </table>
-  
-      </div>
+
+        <form name="hostelForm">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 col-12 form-group">
+              <label for="inp" class="inp">
+                <input type="text" name="name" class="form-control"  placeholder="&nbsp;"
+                [(ngModel)]="adminDto.name" [value]="adminDto.name">
+                <span class="label">Admin Name *</span>
+                <span class="focus-bg"></span>
+              </label>
+            </div>
+
+            
+            <div class="col-xl-6 col-lg-6 col-12 form-group">
+              <label for="inp" class="inp">
+                <input type="text" name="type" class="form-control" placeholder="&nbsp;"
+                [(ngModel)]="adminDto.type" [value]="adminDto.type">
+                <span class="label">type</span>
+                <span class="focus-bg"></span>
+              </label>
+            </div>
+
+            <div class="col-xl-6 col-lg-6 col-12 form-group">
+              <label for="inp" class="inp">
+                <input type="text" name="address" class="form-control" id="inp" placeholder="&nbsp;"
+                [(ngModel)]="adminDto.address" [value]="adminDto.address">
+                <span class="label">Address</span>
+                <span class="focus-bg"></span>
+              </label>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-12 form-group">
+              <label for="inp" class="inp">
+                <input type="text" name="description" class="form-control" id="inp" placeholder="&nbsp;"
+                [(ngModel)]="adminDto.description" [value]="adminDto.description">
+                <span class="label">Description</span>
+                <span class="focus-bg"></span>
+              </label>
+            </div>
+
+            <div class="col-xl-4 col-lg-6 col-12 form-group">
+              <div class="form-group" style="float: left;">
+                <button *ngIf="!this.isUpdate"  type="button"
+                  class="btn-fill-lg btn-gradient-yellow btn-hover-bluedark" >
+                  Save
+                </button>&nbsp;
+                <button *ngIf="this.isUpdate"  type="button"
+                  class="btn-fill-lg btn-gradient-yellow btn-hover-bluedark">
+                  Update
+                </button>&nbsp;
+                <button  (click)="clear()" type="button"
+                class="" >
+                  Reset 
+                </button>
+              </div>
+            </div>
+          </div>
+        </form> 
     </div>
   </div>
 </div>
